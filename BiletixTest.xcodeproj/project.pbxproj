@@ -13,6 +13,7 @@
 		22692AB224D1F1C800DD3B7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22692AB024D1F1C800DD3B7F /* Main.storyboard */; };
 		22692AB424D1F1CA00DD3B7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22692AB324D1F1CA00DD3B7F /* Assets.xcassets */; };
 		22692AB724D1F1CA00DD3B7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22692AB524D1F1CA00DD3B7F /* LaunchScreen.storyboard */; };
+		895CD01FC001DC2FFFC20B2A /* Pods_BiletixTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C84D06EF57D4F3F3D3745F4 /* Pods_BiletixTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		22692AB324D1F1CA00DD3B7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22692AB624D1F1CA00DD3B7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22692AB824D1F1CA00DD3B7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C84D06EF57D4F3F3D3745F4 /* Pods_BiletixTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiletixTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F6544739D905752AB6E5FEF /* Pods-BiletixTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiletixTest.debug.xcconfig"; path = "Target Support Files/Pods-BiletixTest/Pods-BiletixTest.debug.xcconfig"; sourceTree = "<group>"; };
+		BF399E65791A4880CB6C081D /* Pods-BiletixTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiletixTest.release.xcconfig"; path = "Target Support Files/Pods-BiletixTest/Pods-BiletixTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895CD01FC001DC2FFFC20B2A /* Pods_BiletixTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1867F83717A73EE4BC8C05AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C84D06EF57D4F3F3D3745F4 /* Pods_BiletixTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		22692A9E24D1F1C800DD3B7F = {
 			isa = PBXGroup;
 			children = (
 				22692AA924D1F1C800DD3B7F /* BiletixTest */,
 				22692AA824D1F1C800DD3B7F /* Products */,
+				D533F2B0E8CA4677B7EB4FA9 /* Pods */,
+				1867F83717A73EE4BC8C05AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = BiletixTest;
 			sourceTree = "<group>";
 		};
+		D533F2B0E8CA4677B7EB4FA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F6544739D905752AB6E5FEF /* Pods-BiletixTest.debug.xcconfig */,
+				BF399E65791A4880CB6C081D /* Pods-BiletixTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22692ABB24D1F1CA00DD3B7F /* Build configuration list for PBXNativeTarget "BiletixTest" */;
 			buildPhases = (
+				17E3C7839E87A7578441531D /* [CP] Check Pods Manifest.lock */,
 				22692AA324D1F1C800DD3B7F /* Sources */,
 				22692AA424D1F1C800DD3B7F /* Frameworks */,
 				22692AA524D1F1C800DD3B7F /* Resources */,
+				2D7E4C645DBAC5BDB9E0D9C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17E3C7839E87A7578441531D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BiletixTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D7E4C645DBAC5BDB9E0D9C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BiletixTest/Pods-BiletixTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BiletixTest/Pods-BiletixTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BiletixTest/Pods-BiletixTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		22692AA324D1F1C800DD3B7F /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		22692ABC24D1F1CA00DD3B7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F6544739D905752AB6E5FEF /* Pods-BiletixTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		22692ABD24D1F1CA00DD3B7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF399E65791A4880CB6C081D /* Pods-BiletixTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
