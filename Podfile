@@ -7,5 +7,5 @@ target 'BiletixTest' do
 
   # Pods for BiletixTest
 pod 'Alamofire'
-pod 'XMLParsing'
+pod 'SWXMLHash'
 end

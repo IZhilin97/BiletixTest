@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double XMLParsingVersionNumber;
-FOUNDATION_EXPORT const unsigned char XMLParsingVersionString[];
+FOUNDATION_EXPORT double SWXMLHashVersionNumber;
+FOUNDATION_EXPORT const unsigned char SWXMLHashVersionString[];
 
