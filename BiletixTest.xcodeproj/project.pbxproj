@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221C465524D43A8600D63B71 /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C465424D43A8600D63B71 /* SessionModel.swift */; };
+		221C465724D43B0600D63B71 /* SessionProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C465624D43B0600D63B71 /* SessionProcessor.swift */; };
+		221C465924D43C8200D63B71 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C465824D43C8200D63B71 /* Constants.swift */; };
 		22692AAB24D1F1C800DD3B7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22692AAA24D1F1C800DD3B7F /* AppDelegate.swift */; };
 		22692AAD24D1F1C800DD3B7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22692AAC24D1F1C800DD3B7F /* SceneDelegate.swift */; };
 		22692AAF24D1F1C800DD3B7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22692AAE24D1F1C800DD3B7F /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		221C465424D43A8600D63B71 /* SessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
+		221C465624D43B0600D63B71 /* SessionProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProcessor.swift; sourceTree = "<group>"; };
+		221C465824D43C8200D63B71 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		22692AA724D1F1C800DD3B7F /* BiletixTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiletixTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22692AAA24D1F1C800DD3B7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22692AAC24D1F1C800DD3B7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +56,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		221C465324D43A6100D63B71 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				221C465424D43A8600D63B71 /* SessionModel.swift */,
+				221C465624D43B0600D63B71 /* SessionProcessor.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
 		22692A9E24D1F1C800DD3B7F = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +86,7 @@
 		22692AA924D1F1C800DD3B7F /* BiletixTest */ = {
 			isa = PBXGroup;
 			children = (
+				221C465324D43A6100D63B71 /* Session */,
 				22692AAA24D1F1C800DD3B7F /* AppDelegate.swift */,
 				22692AAC24D1F1C800DD3B7F /* SceneDelegate.swift */,
 				22692AAE24D1F1C800DD3B7F /* ViewController.swift */,
@@ -78,6 +94,7 @@
 				22692AB324D1F1CA00DD3B7F /* Assets.xcassets */,
 				22692AB524D1F1CA00DD3B7F /* LaunchScreen.storyboard */,
 				22692AB824D1F1CA00DD3B7F /* Info.plist */,
+				221C465824D43C8200D63B71 /* Constants.swift */,
 			);
 			path = BiletixTest;
 			sourceTree = "<group>";
@@ -88,7 +105,6 @@
 				8F6544739D905752AB6E5FEF /* Pods-BiletixTest.debug.xcconfig */,
 				BF399E65791A4880CB6C081D /* Pods-BiletixTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,7 +225,10 @@
 			files = (
 				22692AAF24D1F1C800DD3B7F /* ViewController.swift in Sources */,
 				22692AAB24D1F1C800DD3B7F /* AppDelegate.swift in Sources */,
+				221C465724D43B0600D63B71 /* SessionProcessor.swift in Sources */,
+				221C465524D43A8600D63B71 /* SessionModel.swift in Sources */,
 				22692AAD24D1F1C800DD3B7F /* SceneDelegate.swift in Sources */,
+				221C465924D43C8200D63B71 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
