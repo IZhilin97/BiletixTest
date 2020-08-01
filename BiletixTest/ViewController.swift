@@ -9,10 +9,11 @@
 import UIKit
 import Alamofire
 import SWXMLHash
-
-class ViewController: UIViewController, SessionDelegate {
+//MARK: - TEST
+class ViewController:UIViewController, DataReceiver {
     
     var sessionProcessor: SessionProcessor?
+    var flightsProcessor: FlightsDataProcessor?
     var sessionToken: String = ""
     
     override func viewDidLoad() {
@@ -21,8 +22,14 @@ class ViewController: UIViewController, SessionDelegate {
         sessionProcessor = SessionProcessor(delegate: self)
     }
     
-    func sessionChanged(session: Session) {
-        sessionToken = session.token ?? ""
-        print("got token: " + sessionToken)
+    func sessionChanged(data: ApiDataModel) {
+        switch data.apiType {
+        case "Session":
+            sessionToken = (data as! Session).token ?? ""
+            print("got token: " + sessionToken)
+            break
+        default:
+            break
+        }
     }
 }

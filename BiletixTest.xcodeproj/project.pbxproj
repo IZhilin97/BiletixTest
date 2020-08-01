@@ -10,6 +10,9 @@
 		221C465524D43A8600D63B71 /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C465424D43A8600D63B71 /* SessionModel.swift */; };
 		221C465724D43B0600D63B71 /* SessionProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C465624D43B0600D63B71 /* SessionProcessor.swift */; };
 		221C465924D43C8200D63B71 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C465824D43C8200D63B71 /* Constants.swift */; };
+		224D3CF324D590C700D64829 /* FlightDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D3CF224D590C700D64829 /* FlightDataModel.swift */; };
+		224D3CF524D5949F00D64829 /* FlightsDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D3CF424D5949F00D64829 /* FlightsDataProcessor.swift */; };
+		224D3CF724D59E0900D64829 /* DataGotProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D3CF624D59E0900D64829 /* DataGotProtocol.swift */; };
 		22692AAB24D1F1C800DD3B7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22692AAA24D1F1C800DD3B7F /* AppDelegate.swift */; };
 		22692AAD24D1F1C800DD3B7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22692AAC24D1F1C800DD3B7F /* SceneDelegate.swift */; };
 		22692AAF24D1F1C800DD3B7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22692AAE24D1F1C800DD3B7F /* ViewController.swift */; };
@@ -23,6 +26,9 @@
 		221C465424D43A8600D63B71 /* SessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
 		221C465624D43B0600D63B71 /* SessionProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProcessor.swift; sourceTree = "<group>"; };
 		221C465824D43C8200D63B71 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		224D3CF224D590C700D64829 /* FlightDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDataModel.swift; sourceTree = "<group>"; };
+		224D3CF424D5949F00D64829 /* FlightsDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsDataProcessor.swift; sourceTree = "<group>"; };
+		224D3CF624D59E0900D64829 /* DataGotProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGotProtocol.swift; sourceTree = "<group>"; };
 		22692AA724D1F1C800DD3B7F /* BiletixTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiletixTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22692AAA24D1F1C800DD3B7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22692AAC24D1F1C800DD3B7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +71,15 @@
 			path = Session;
 			sourceTree = "<group>";
 		};
+		224D3CF124D5905100D64829 /* FlightData */ = {
+			isa = PBXGroup;
+			children = (
+				224D3CF224D590C700D64829 /* FlightDataModel.swift */,
+				224D3CF424D5949F00D64829 /* FlightsDataProcessor.swift */,
+			);
+			path = FlightData;
+			sourceTree = "<group>";
+		};
 		22692A9E24D1F1C800DD3B7F = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +101,7 @@
 		22692AA924D1F1C800DD3B7F /* BiletixTest */ = {
 			isa = PBXGroup;
 			children = (
+				224D3CF124D5905100D64829 /* FlightData */,
 				221C465324D43A6100D63B71 /* Session */,
 				22692AAA24D1F1C800DD3B7F /* AppDelegate.swift */,
 				22692AAC24D1F1C800DD3B7F /* SceneDelegate.swift */,
@@ -95,6 +111,7 @@
 				22692AB524D1F1CA00DD3B7F /* LaunchScreen.storyboard */,
 				22692AB824D1F1CA00DD3B7F /* Info.plist */,
 				221C465824D43C8200D63B71 /* Constants.swift */,
+				224D3CF624D59E0900D64829 /* DataGotProtocol.swift */,
 			);
 			path = BiletixTest;
 			sourceTree = "<group>";
@@ -223,9 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224D3CF324D590C700D64829 /* FlightDataModel.swift in Sources */,
 				22692AAF24D1F1C800DD3B7F /* ViewController.swift in Sources */,
 				22692AAB24D1F1C800DD3B7F /* AppDelegate.swift in Sources */,
 				221C465724D43B0600D63B71 /* SessionProcessor.swift in Sources */,
+				224D3CF524D5949F00D64829 /* FlightsDataProcessor.swift in Sources */,
+				224D3CF724D59E0900D64829 /* DataGotProtocol.swift in Sources */,
 				221C465524D43A8600D63B71 /* SessionModel.swift in Sources */,
 				22692AAD24D1F1C800DD3B7F /* SceneDelegate.swift in Sources */,
 				221C465924D43C8200D63B71 /* Constants.swift in Sources */,

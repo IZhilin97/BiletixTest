@@ -9,7 +9,13 @@
 import Foundation
 import SWXMLHash
 
-struct Session: XMLIndexerDeserializable{
+struct Session: XMLIndexerDeserializable, ApiDataModel{
+    var apiType: String{
+        get{
+            return "Session"
+        }
+    }
+    
     var token: String?
     
     static func deserialize(_ node: XMLIndexer) throws -> Session {
