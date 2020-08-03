@@ -14,13 +14,17 @@ struct Flight: XMLIndexerDeserializable{
     var arrivalTime: String?
     var flightNumber: String?
     var duration: Int?
+    var departureAirportCode: String?
+    var arrivalAirportCode: String?
     
     static func deserialize(_ node: XMLIndexer) throws -> Flight {
         return try Flight(
             departureTime: node["segments"]["AirSegment"]["departure_date"].value(),
             arrivalTime: node["segments"]["AirSegment"]["arrival_date"].value(),
             flightNumber: node["segments"]["AirSegment"]["flight_number"].value(),
-            duration: node["segments"]["AirSegment"]["duration"].value()
+            duration: node["segments"]["AirSegment"]["duration"].value(),
+            departureAirportCode: node["segments"]["AirSegment"]["departure_airport_code"].value(),
+            arrivalAirportCode: node["segments"]["AirSegment"]["arrival_airport_code"].value()
         )
     }
 }

@@ -35,7 +35,7 @@ class FlightsDataProcessor {
                "<owrt i:type=\"d:string\">OW</owrt>" +
                "<departure_point i:type=\"d:string\">MOW</departure_point>" +
                "<arrival_point i:type=\"d:string\">LED</arrival_point>" +
-               "<outbound_date i:type=\"d:string\">03.08.2020</outbound_date>" +
+               "<outbound_date i:type=\"d:string\">08.08.2020</outbound_date>" +
                "<return_date i:type=\"d:string\" />" +
                "<adult_count i:type=\"d:int\">1</adult_count>" +
                "<child_count i:type=\"d:int\">0</child_count>" +

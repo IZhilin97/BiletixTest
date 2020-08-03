@@ -20,6 +20,8 @@
 		22692AB424D1F1CA00DD3B7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22692AB324D1F1CA00DD3B7F /* Assets.xcassets */; };
 		22692AB724D1F1CA00DD3B7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22692AB524D1F1CA00DD3B7F /* LaunchScreen.storyboard */; };
 		22C2531124D82A3200D8AF11 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2531024D82A3200D8AF11 /* DateFormatter.swift */; };
+		22C2531524D82E1E00D8AF11 /* FlightDataTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2531424D82E1E00D8AF11 /* FlightDataTable.swift */; };
+		22C2531924D8301D00D8AF11 /* FlightDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2531824D8301D00D8AF11 /* FlightDataCell.swift */; };
 		895CD01FC001DC2FFFC20B2A /* Pods_BiletixTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C84D06EF57D4F3F3D3745F4 /* Pods_BiletixTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		22692AB624D1F1CA00DD3B7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22692AB824D1F1CA00DD3B7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22C2531024D82A3200D8AF11 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		22C2531424D82E1E00D8AF11 /* FlightDataTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDataTable.swift; sourceTree = "<group>"; };
+		22C2531824D8301D00D8AF11 /* FlightDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDataCell.swift; sourceTree = "<group>"; };
 		4C84D06EF57D4F3F3D3745F4 /* Pods_BiletixTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiletixTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F6544739D905752AB6E5FEF /* Pods-BiletixTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiletixTest.debug.xcconfig"; path = "Target Support Files/Pods-BiletixTest/Pods-BiletixTest.debug.xcconfig"; sourceTree = "<group>"; };
 		BF399E65791A4880CB6C081D /* Pods-BiletixTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiletixTest.release.xcconfig"; path = "Target Support Files/Pods-BiletixTest/Pods-BiletixTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 		22692AA924D1F1C800DD3B7F /* BiletixTest */ = {
 			isa = PBXGroup;
 			children = (
+				22C2531324D82DF600D8AF11 /* UIFlightDataTable */,
 				224D3CF124D5905100D64829 /* FlightData */,
 				221C465324D43A6100D63B71 /* Session */,
 				22692AAA24D1F1C800DD3B7F /* AppDelegate.swift */,
@@ -117,6 +122,15 @@
 				22C2531024D82A3200D8AF11 /* DateFormatter.swift */,
 			);
 			path = BiletixTest;
+			sourceTree = "<group>";
+		};
+		22C2531324D82DF600D8AF11 /* UIFlightDataTable */ = {
+			isa = PBXGroup;
+			children = (
+				22C2531424D82E1E00D8AF11 /* FlightDataTable.swift */,
+				22C2531824D8301D00D8AF11 /* FlightDataCell.swift */,
+			);
+			path = UIFlightDataTable;
 			sourceTree = "<group>";
 		};
 		D533F2B0E8CA4677B7EB4FA9 /* Pods */ = {
@@ -250,9 +264,11 @@
 				22C2531124D82A3200D8AF11 /* DateFormatter.swift in Sources */,
 				224D3CF524D5949F00D64829 /* FlightsDataProcessor.swift in Sources */,
 				224D3CF724D59E0900D64829 /* DataGotProtocol.swift in Sources */,
+				22C2531924D8301D00D8AF11 /* FlightDataCell.swift in Sources */,
 				221C465524D43A8600D63B71 /* SessionModel.swift in Sources */,
 				22692AAD24D1F1C800DD3B7F /* SceneDelegate.swift in Sources */,
 				221C465924D43C8200D63B71 /* Constants.swift in Sources */,
+				22C2531524D82E1E00D8AF11 /* FlightDataTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

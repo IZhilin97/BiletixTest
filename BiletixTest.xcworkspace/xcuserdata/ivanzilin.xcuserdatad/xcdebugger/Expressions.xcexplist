@@ -3,9 +3,6 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "ViewController.sessionChanged(data:):ViewController.swift">
-      </ContextState>
-      <ContextState
          contextName = "closure #1 in FlightsDataProcessor.initiateRequest():FlightsDataProcessor.swift">
          <PersistentStrings>
             <PersistentString
@@ -30,6 +27,17 @@
             </PersistentString>
             <PersistentString
                value = "self.stringParams">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.sessionChanged(data:):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.dataChanged(data:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "flightsProcessor!.getOffer()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
