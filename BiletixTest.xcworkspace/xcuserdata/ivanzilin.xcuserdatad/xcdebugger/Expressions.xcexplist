@@ -3,6 +3,26 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ViewController.sessionChanged(data:):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in FlightsDataProcessor.initiateRequest():FlightsDataProcessor.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.offers">
+            </PersistentString>
+            <PersistentString
+               value = "xml[&quot;Envelope&quot;][&quot;Body&quot;][&quot;GetOptimalFaresOutput&quot;][&quot;offers&quot;][&quot;GetOptimalFaresOffer&quot;][0][&quot;products&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "xml[&quot;Envelope&quot;][&quot;Body&quot;][&quot;GetOptimalFaresOutput&quot;][&quot;offers&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "self.offer">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in ViewController.viewDidLoad():ViewController.swift">
          <PersistentStrings>
             <PersistentString

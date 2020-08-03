@@ -57,7 +57,7 @@ class SessionProcessor {
                 }.parse(response.data!)
                 
                 self.session = try! xml["Envelope"]["Body"]["StartSessionOutput"].value()
-                self.delegate.sessionChanged(data: (self.session ?? Session()) as ApiDataModel)
+                self.delegate.dataChanged(data: (self.session ?? Session()) as ApiDataModel)
         }
     }
 }

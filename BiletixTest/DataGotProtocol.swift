@@ -12,5 +12,5 @@ protocol ApiDataModel {
 }
 
 protocol DataReceiver {
-    func sessionChanged(data: ApiDataModel)
+    func dataChanged(data: ApiDataModel)
 }

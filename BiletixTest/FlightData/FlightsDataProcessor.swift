@@ -11,17 +11,18 @@ import Alamofire
 import SWXMLHash
 
 class FlightsDataProcessor {
-    private var flights: FlightsData?
-
+    private var offers: Offers?
+    private var token: String = ""
     var delegate: DataReceiver
     
-    init(delegate: DataReceiver){
+    init(token: String, delegate: DataReceiver){
         self.delegate = delegate
+        self.token = token
         initiateRequest()
     }
 
-    func getSession() -> FlightsData{
-        return flights ?? []
+    func getOffer() -> Offers{
+        return offers ?? Offers(offers: [])
     }
 
     func initiateRequest(){
@@ -30,11 +31,11 @@ class FlightsDataProcessor {
         "<v:Header />" +
         "<v:Body>" +
             "<GetOptimalFaresInput xmlns=\"http://www.tais.ru/\" id=\"o0\" c:root=\"1\">" +
-               "<session_token i:type=\"d:string\">9u0jkggdb51aqtsci6h575ibn5</session_token>" +
+               "<session_token i:type=\"d:string\">\(token)</session_token>" +
                "<owrt i:type=\"d:string\">OW</owrt>" +
                "<departure_point i:type=\"d:string\">MOW</departure_point>" +
                "<arrival_point i:type=\"d:string\">LED</arrival_point>" +
-               "<outbound_date i:type=\"d:string\">25.08.2020</outbound_date>" +
+               "<outbound_date i:type=\"d:string\">03.08.2020</outbound_date>" +
                "<return_date i:type=\"d:string\" />" +
                "<adult_count i:type=\"d:int\">1</adult_count>" +
                "<child_count i:type=\"d:int\">0</child_count>" +
@@ -61,8 +62,8 @@ class FlightsDataProcessor {
                     config.shouldProcessNamespaces = true
                 }.parse(response.data!)
 
-                //self.session = try! xml["Envelope"]["Body"]["StartSessionOutput"].value()
-                self.delegate.sessionChanged(data: (self.flights ?? []) as ApiDataModel)
+                self.offers = try! xml["Envelope"]["Body"]["GetOptimalFaresOutput"]["offers"].value()
+                self.delegate.dataChanged(data: (self.offers ?? Offers(offers: [])) as ApiDataModel)
         }
     }
 }

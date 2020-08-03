@@ -22,11 +22,15 @@ class ViewController:UIViewController, DataReceiver {
         sessionProcessor = SessionProcessor(delegate: self)
     }
     
-    func sessionChanged(data: ApiDataModel) {
+    func dataChanged(data: ApiDataModel) {
         switch data.apiType {
         case "Session":
             sessionToken = (data as! Session).token ?? ""
             print("got token: " + sessionToken)
+            flightsProcessor = FlightsDataProcessor(token: sessionToken, delegate: self)
+            break
+        case "Offers":
+            
             break
         default:
             break
